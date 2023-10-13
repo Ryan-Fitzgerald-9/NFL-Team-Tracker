@@ -8,11 +8,11 @@ The user can use the navigation menu to update their team's current roster, dept
 
 With the idea of an NFL tracker, the initial data relationships can be observed in the following ERD.
 
-![Database Structure of NFL Team Tracker](.assets/ERD.png)
+![Database Structure of NFL Team Tracker](assets/ERD.png)
 
 After the initial database, I created a wireframe design for the app layout
 
-![Wireframe of NFL Team Tracker](.assets/wireframe.png)
+![Wireframe of NFL Team Tracker](assets/wireframe.png)
 
 ## Project Requirements
 1. The app must have 3 related data entities
