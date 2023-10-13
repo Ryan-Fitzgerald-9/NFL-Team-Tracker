@@ -19,3 +19,8 @@ After the initial database, I created a wireframe design for the app layout
 2. Consistent and polished user interface
 3. Full CRUD on all models across the Back End
 4. At least 1 additional Create, Update, or Delete functionality on models across Front and Back End
+
+## Stretch Goals
+1. Interactive player cards with animations for user updates
+2. Automation after user updates (Ex: an injured starter should move to the end of the order, the backup would then become the starter)
+3. Apply sounds/music to pages and buttons
