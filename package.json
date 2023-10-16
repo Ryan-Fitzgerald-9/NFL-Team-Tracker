@@ -1,0 +1,15 @@
+{
+  "name": "nfl-team-tracker",
+  "version": "1.0.0",
+  "description": "NFL Team Tracker is a mock app where you can keep updates on your favorite team",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "mongoose": "^7.6.2"
+  }
+}
