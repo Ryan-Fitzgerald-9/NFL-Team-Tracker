@@ -101,11 +101,11 @@ const main = async () => {
             },
             {
                 week: 11,
-                date: '',
+                date: " ",
                 opponent: 'BYE WEEK',
-                location: '',
-                result: '',
-                score: ''
+                location: " ",
+                result: " ",
+                score: " "
             },
             {
                 week: 12,

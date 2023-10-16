@@ -5,10 +5,8 @@ const teamSchema = new Schema(
     {
         team_name: { type: String, required: true },
         logo: { type: String, required: true },
-        location: { type: String, required: true },
-        stadium: { type: String, required: true },
-        capacity: { type: Number, required: true },
-        players_salary: { type: String, required: true }
+        stadium_loc: { type: String, required: true },
+        capacity: { type: Number, required: true }
     },
     { timestamps: true },
 )
