@@ -1,0 +1,8 @@
+body {
+    background-image: url('https://static.clubs.nfl.com/image/private/t_editorial_landscape_12_desktop/f_png/patriots/mcdubeerkd5xvprfgoya.png');
+    background-size: cover;
+    min-height: 100vh;
+    width: 100%;
+    background-position: 0 60%;
+    overflow: hidden;
+}
