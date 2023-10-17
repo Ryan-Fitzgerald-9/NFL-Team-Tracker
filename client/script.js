@@ -39,17 +39,17 @@ const rosterBtnClick = async () => {
             <p class="position">${player.position} #${player.number}</p>
             <p class="college">College: ${player.college}</p>`
   
-          mainBody.innerHTML += playerText;
+          mainBody.innerHTML += playerText
         })
       } else {
-        mainBody.innerHTML = `<div class="not-found">Players not found</div>`;
+        mainBody.innerHTML = `<div class="not-found">Players not found</div>`
       }
     } catch (error) {
-      console.error(error);
+      console.error(error)
     }
-  }
+}
 
-  const scheduleBtnClick = async () => {
+const scheduleBtnClick = async () => {
     infoBtns.replaceChildren()
     mainBody.replaceChildren()
   
@@ -72,16 +72,38 @@ const rosterBtnClick = async () => {
           mainBody.innerHTML += scheduleText;
         })
       } else {
-        mainBody.innerHTML = `<div class="not-found">Game not found</div>`;
+        mainBody.innerHTML = `<div class="not-found">Game not found</div>`
       }
     } catch (error) {
-      console.error(error);
+      console.error(error)
     }
-  }
+}
 
+const searchBtnClick = async () => {
+    infoBtns.replaceChildren()
+    mainBody.replaceChildren()
+    playerName = searchBar.value
+    let player = await axios.get(`${base}player`)
+    player.data.forEach((player) =>{
+        if(playerName == player.name) {
+                const playerText = `<div class="item-holder">
+                    <img src="${player.image}" alt="" class="player-pic">
+                    <h3 class="player-name">${player.name}</h3>
+                    <p class="position">${player.position} #${player.number}</p>
+                    <p class="college">College: ${player.college}</p>`
+
+                mainBody.innerHTML += playerText
+            
+            if(!mainBody.innerText) {
+                `<div class="not-found">Player not found</div>`
+            }
+        }
+    })
+}
 
 // EVENT LISTENERS
 
 rosterBtn.addEventListener('click', rosterBtnClick)
 scheduleBtn.addEventListener('click', scheduleBtnClick)
 homeBtn.addEventListener('click', homeBtnClick)
+searchBtn.addEventListener('click', searchBtnClick)
