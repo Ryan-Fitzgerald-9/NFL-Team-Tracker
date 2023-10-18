@@ -41,15 +41,33 @@ const rosterBtnClick = async () => {
             <p class="position">${player.position} #${player.number}</p>
             <p class="college">College: ${player.college}</p>
             <button class="update-button">Update<button>
-            <button class="remove-button">Remove<button>`
+            <button class="remove-button" data-player-id="${player._id}">Remove<button>`
   
-          mainBody.innerHTML += playerText
+        mainBody.innerHTML += playerText
+
+    
+        const removeBtn = mainBody.querySelector(`.remove-button`);
+        removeBtn.addEventListener('click', (event) => {
+            const playerElement = event.target.closest('.item-holder');
+            if (playerElement) {
+                const playerId = playerElement.getAttribute('data-player-id');
+                axios.delete(`${base}/player/${playerId}`)
+                    .then(() => {
+                        // Removes player element from the DOM
+                        playerElement.remove();
+                    })
+                    .catch((error) => {
+                        console.error(`Error removing player with ID ${playerId}:`, error);
+                    })
+                }
+            })
         })
+
       } else {
         mainBody.innerHTML = `<div class="not-found">Players not found</div>`
       }
     } catch (error) {
-      console.error(error)
+        console.error(error)
     }
 }
 
