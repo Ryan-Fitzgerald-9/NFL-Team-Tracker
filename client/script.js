@@ -43,26 +43,29 @@ const rosterBtnClick = async () => {
             <button class="update-button">Update<button>
             <button class="remove-button" data-player-id="${player._id}">Remove<button>`
   
-        mainBody.innerHTML += playerText
+            mainBody.innerHTML += playerText
 
-    
-        const removeBtn = mainBody.querySelector(`.remove-button`);
-        removeBtn.addEventListener('click', (event) => {
-            const playerElement = event.target.closest('.item-holder');
-            if (playerElement) {
-                const playerId = playerElement.getAttribute('data-player-id');
-                axios.delete(`${base}/player/${playerId}`)
-                    .then(() => {
-                        // Removes player element from the DOM
-                        playerElement.remove();
-                    })
-                    .catch((error) => {
-                        console.error(`Error removing player with ID ${playerId}:`, error);
-                    })
-                }
-            })
         })
 
+        mainBody.addEventListener('click', async (event) => {
+            if (event.target && event.target.classList && event.target.classList.contains('remove-button')) {
+                const playerElement = event.target.closest('.item-holder')
+                if (playerElement) {
+                    const playerId = event.target.getAttribute('data-player-id')
+                    try {
+                        const rexponse = await axios.delete(`${base}player/${playerId}`)
+                        // if (response.status === 200) {
+                        //     // Removes player element from the DOM
+                        //     playerElement.remove()
+                        // }
+                    } catch(error) {
+                            console.error(`Error removing player with ID ${playerId}:`, error);
+                    }
+                }
+            }
+        })
+// 65301fbe30704e283da319ac - from error msg
+// 65301fbe30704e283da319ac - from localhost/player
       } else {
         mainBody.innerHTML = `<div class="not-found">Players not found</div>`
       }

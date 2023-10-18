@@ -60,9 +60,10 @@ async function createPlayer(req, res) {
     try {
         const player = await new Player(req.body)
         await player.save()
-        return res.status(201).json({
-            player
-        })
+        // return res.status(201).json({
+        //     player
+        // })
+        return res.redirect('http://127.0.0.1:5500/client/index.html#')
     } catch (e) {
         return res.status(500).json({ error: e.message })
     }

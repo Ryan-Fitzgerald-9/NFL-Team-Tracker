@@ -33,6 +33,7 @@ a:hover {
     font-size: 2rem;
 }
 .nav-bar {
+    z-index: 99;
     position: fixed;
     display: flex;
     justify-content: space-between;
@@ -97,6 +98,7 @@ main {
     justify-content: space-around;
 }
 .item-holder {
+    overflow-y: scroll;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
