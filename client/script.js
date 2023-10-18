@@ -53,7 +53,8 @@ const rosterBtnClick = async () => {
     }
 }
 
-const addPlayerBtnClick = async () => {
+const addPlayerBtnClick = async (e) => {
+    e.preventDefault()
     infoBtns.replaceChildren()
     mainBody.replaceChildren()
     searchBar.value = ""
@@ -69,11 +70,12 @@ const addPlayerBtnClick = async () => {
             <input type="text" id="able_to_play" name="able_to_play" placeholder="Able to play">
             <input type="text" id="team" name="team" placeholder="Team">
             <input type="text" id="college" name="college" placeholder="College">
-            <button type="submit" id="submit">Submit Player</button>
+            <button onclick="window.location.href = 'http://127.0.0.1:5500/client/index.html';"type="submit" id="submit">Submit Player</button>
             </form>`
 
         mainBody.innerHTML += addPlayerText
-        console.log()
+        console.log('working')
+        // window.location.href = "http://127.0.0.1:5500/client/index.html"
 
     // const addPlayerForm = document.getElementById('add-player-form')
           
