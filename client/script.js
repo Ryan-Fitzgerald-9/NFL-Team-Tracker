@@ -57,23 +57,73 @@ const addPlayerBtnClick = async () => {
     infoBtns.replaceChildren()
     mainBody.replaceChildren()
     searchBar.value = ""
-    const addPlayerText = `<form id="add-player-form">
-            <input type="text" id="name" placeholder="Name" required>
-            <input type="text" id="position" placeholder="Position" required>
-            <input type="number" id="depth_chart_pos" placeholder="Depth Chart Position" required>
-            <input type="number" id="number" placeholder="Number" required>
-            <input type="number" id="age" placeholder="Age" required>
-            <input type="text" id="height" placeholder="Height" required>
-            <input type="number" id="weight" placeholder="Weight" required>
-            <input type="text" id="college" placeholder="College" required>
-            <input type="url" id="image" placeholder="Image URL" required>
-            <label for="able_to_play">Able to Play: </label>
-            <input type="checkbox" id="able_to_play">
-            <button type="submit">Add Player</button>
+    const addPlayerText = `<form method="post" action="http://localhost:3001/player" id="add-player-form">
+            <input type="url" id="image" name="image" placeholder="Image URL">
+            <input type="text" id="name" name="name" placeholder="Name">
+            <input type="text" id="position" name="position" placeholder="Position">
+            <input type="number" id="depth_chart_pos" name="depth_chart_pos" placeholder="Depth Chart Position">
+            <input type="number" id="number" name="number" placeholder="Number">
+            <input type="number" id="age" name="age" placeholder="Age">
+            <input type="text" id="height" name="height" placeholder="Height">
+            <input type="number" id="weight" name="weight" placeholder="Weight">
+            <input type="text" id="able_to_play" name="able_to_play" placeholder="Able to play">
+            <input type="text" id="team" name="team" placeholder="Team">
+            <input type="text" id="college" name="college" placeholder="College">
+            <button type="submit" id="submit">Submit Player</button>
             </form>`
 
         mainBody.innerHTML += addPlayerText
+        console.log()
 
+    // const addPlayerForm = document.getElementById('add-player-form')
+          
+    // // Get the values from the form fields
+    // const name = document.getElementById('name').value
+    // const position = document.getElementById('position').value
+    // const depthChartPos = document.getElementById('depth_chart_pos').value
+    // const number = document.getElementById('number').value
+    // const age = document.getElementById('age').value
+    // const height = document.getElementById('height').value
+    // const weight = document.getElementById('weight').value
+    // const college = document.getElementById('college').value
+    // const image = document.getElementById('image').value
+    // const team = document.getElementById('team').value
+    // const ableToPlay = document.getElementById('able_to_play').value
+    // const submitBtn = document.getElementById('submit')
+
+
+    // // Form values
+    // const formData = {
+    // name,
+    // position,
+    // depthChartPos,
+    // number,
+    // age,
+    // height,
+    // weight,
+    // college,
+    // image,
+    // team,
+    // ableToPlay
+    // }
+
+    // if (submitBtn) {
+    //     submitBtn.addEventListener('click', async (event) => {
+    //     event.preventDefault()
+    //     console.log(event.target)
+
+    //     try {
+    //         const addPlayerResponse = await axios.post(`${base}player`, formData)
+    //         const addPlayerData = addPlayerResponse.data
+    //         console.log(addPlayerData)
+
+    //         // Clear the form fields after submission
+    //         addPlayerForm.reset()
+    //     } catch (error) {
+    //         console.error('Error adding player:', error)
+    //     }
+    //     })
+    // }
 }
 
 
