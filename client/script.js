@@ -40,8 +40,8 @@ const rosterBtnClick = async () => {
             <h3 class="player-name">${player.name}</h3>
             <p class="position">${player.position} #${player.number}</p>
             <p class="college">College: ${player.college}</p>
-            <button class="update-button">Update<button>
-            <button class="remove-button" data-player-id="${player._id}">Remove<button>`
+            <button class="remove-button" data-player-id="${player._id}">Remove</button>
+            </div>`
   
             mainBody.innerHTML += playerText
 
@@ -64,8 +64,6 @@ const rosterBtnClick = async () => {
                 }
             }
         })
-// 65301fbe30704e283da319ac - from error msg
-// 65301fbe30704e283da319ac - from localhost/player
       } else {
         mainBody.innerHTML = `<div class="not-found">Players not found</div>`
       }
@@ -96,57 +94,7 @@ const addPlayerBtnClick = async (e) => {
 
         mainBody.innerHTML += addPlayerText
         console.log('working')
-        // window.location.href = "http://127.0.0.1:5500/client/index.html"
-
-    // const addPlayerForm = document.getElementById('add-player-form')
-          
-    // // Get the values from the form fields
-    // const name = document.getElementById('name').value
-    // const position = document.getElementById('position').value
-    // const depthChartPos = document.getElementById('depth_chart_pos').value
-    // const number = document.getElementById('number').value
-    // const age = document.getElementById('age').value
-    // const height = document.getElementById('height').value
-    // const weight = document.getElementById('weight').value
-    // const college = document.getElementById('college').value
-    // const image = document.getElementById('image').value
-    // const team = document.getElementById('team').value
-    // const ableToPlay = document.getElementById('able_to_play').value
-    // const submitBtn = document.getElementById('submit')
-
-
-    // // Form values
-    // const formData = {
-    // name,
-    // position,
-    // depthChartPos,
-    // number,
-    // age,
-    // height,
-    // weight,
-    // college,
-    // image,
-    // team,
-    // ableToPlay
-    // }
-
-    // if (submitBtn) {
-    //     submitBtn.addEventListener('click', async (event) => {
-    //     event.preventDefault()
-    //     console.log(event.target)
-
-    //     try {
-    //         const addPlayerResponse = await axios.post(`${base}player`, formData)
-    //         const addPlayerData = addPlayerResponse.data
-    //         console.log(addPlayerData)
-
-    //         // Clear the form fields after submission
-    //         addPlayerForm.reset()
-    //     } catch (error) {
-    //         console.error('Error adding player:', error)
-    //     }
-    //     })
-    // }
+        
 }
 
 
@@ -171,7 +119,8 @@ const scheduleBtnClick = async () => {
             <p class="location">${games.location}</p>
             <p class="result">${games.result}</p>
             <p class="score">${games.score}</p>
-            <button class="update-button">Update<button>`
+            <button class="update-button">Update</button>
+            </div>`
   
           mainBody.innerHTML += scheduleText
         })
@@ -195,8 +144,7 @@ const searchBtnClick = async () => {
                     <h3 class="player-name">${player.name}</h3>
                     <p class="position">${player.position} #${player.number}</p>
                     <p class="college">College: ${player.college}</p>
-                    <button class="update-button">Update<button>
-                    <button class="remove-button">Remove<button>`
+                    <button class="remove-button">Remove</button>`
 
                 mainBody.innerHTML += playerText
             if(!mainBody.innerText) {
