@@ -53,11 +53,7 @@ const rosterBtnClick = async () => {
                 if (playerElement) {
                     const playerId = event.target.getAttribute('data-player-id')
                     try {
-                        const rexponse = await axios.delete(`${base}player/${playerId}`)
-                        // if (response.status === 200) {
-                        //     // Removes player element from the DOM
-                        //     playerElement.remove()
-                        // }
+                        const response = await axios.delete(`${base}player/${playerId}`)
                     } catch(error) {
                             console.error(`Error removing player with ID ${playerId}:`, error);
                     }

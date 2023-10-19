@@ -1,6 +1,8 @@
 # NFL-Team-Tracker
 
-NFL Team Tracker is a mock app where you can keep updates on your favorite team
+NFL Team Tracker is a mock app where you can keep updates on your favorite team, for this demo I created a page for the New England Ptriots (25 players from the offense).
+
+![Screenshot of the Roster page](assets/tracker-page.png)
 
 The user can use the navigation menu to update their team's current roster, depth chart, players' stats, and team schedule (wins/losses). The user will be able to change these items through interactive player cards and various update forms, depending on the item.
 
@@ -10,17 +12,11 @@ With the idea of an NFL tracker, the initial data relationships can be observed 
 
 ![Database Structure of NFL Team Tracker](assets/ERD.png)
 
-After the initial database, I created a wireframe design for the app layout
-
-![Wireframe of NFL Team Tracker](assets/wireframe.png)
-
 ## Project Requirements
 1. The app must have 3 related data entities
 2. Consistent and polished user interface
 3. Full CRUD on all models across the Back End
 4. At least 1 additional Create, Update, or Delete functionality on models across Front and Back End
 
-## Stretch Goals
-1. Interactive player cards with animations for user updates
-2. Automation after user updates (Ex: an injured starter should move to the end of the order, the backup would then become the starter)
-3. Apply sounds/music to pages and buttons
+## Languages & Database
+![Javascript](https://raw.githubusercontent.com/yurijserrano/Github-Profile-Readme-Logos/042e36c55d4d757621dedc4f03108213fbb57ec4/programming%20languages/javascript.svg)

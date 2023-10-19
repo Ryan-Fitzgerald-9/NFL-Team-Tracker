@@ -21,8 +21,9 @@ a:hover {
 }
 
 #home img {
-    max-width: 50px;
-    max-height: 50px;
+    max-width: 60px;
+    max-height: 60px;
+    vertical-align: middle;
 }
 
 .nav-title {
@@ -37,7 +38,7 @@ a:hover {
 
 .nav-items {
     font-size: 1.5rem;
-    margin-left: 50px;
+    margin-left: 30px;
 }
 
 .nav-bar {
@@ -63,18 +64,18 @@ a:hover {
 }
 .search-bar {
     text-align: center;
-    /* padding: 5px 15px; */
-    width: 250px;
-    height: 30px;
+    width: 280px;
+    height: 35px;
     border-radius: 25px 0 0 25px;
     border: 3px solid #ffffed;
     background-color: #ffffedbd;
-    font-size: 1rem;
+    font-size: 1.2rem;
+    color: #0D254C;
     vertical-align: middle;
 }
 .search-button {
-    height: 30px;
-    width: 30px;
+    height: 35px;
+    width: 35px;
     border-radius: 0 25px 25px 0;
     border: 3px solid #ffffed;
     background-color: #ffffedbd;
@@ -83,7 +84,7 @@ a:hover {
 }
 
 .search-button img {
-    width: 12px;
+    width: 15px;
     vertical-align: middle;
 }
 
@@ -126,8 +127,9 @@ main {
     background-color: darkred;
     color: white;
     width: 70px;
-    height: 30px;
-    font-size: 16px;
+    height: 25px;
+    font-size: 14px;
+    border-radius: 5px;
 }
 
 #add-player-form {
@@ -171,10 +173,8 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* border-radius: 10px; */
     height: 200px;
     width: 200px;
-    /* box-shadow: 0 10px 15px darkgray; */
     position: relative;
 }
 
