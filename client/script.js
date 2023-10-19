@@ -112,7 +112,7 @@ const scheduleBtnClick = async () => {
   
       if (scheduleData.length > 0) {
         scheduleData.forEach((games) => {
-          const scheduleText = `<div class="schedule-holder">
+          const scheduleText = `<div class="schedule-holder" id="schedule-holder">
             <h4 class="week">Wk: ${games.week}</h4>
             <p class="date">${games.date}</p>
             <p class="opponent">${games.opponent}</p>

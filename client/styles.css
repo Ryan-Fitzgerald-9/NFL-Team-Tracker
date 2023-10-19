@@ -37,6 +37,7 @@ a:hover {
 
 .nav-items {
     font-size: 1.5rem;
+    margin-left: 50px;
 }
 
 .nav-bar {
@@ -82,10 +83,8 @@ a:hover {
 }
 
 .search-button img {
-    /* display: flex;
-    align-items: center;
-    height: 15px; */
     width: 12px;
+    vertical-align: middle;
 }
 
 /* BODY STYLES */
@@ -98,18 +97,13 @@ main {
     background-position: center;
     overflow: hidden;
     padding: 70px;
-    /* background-color: #ffffed;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px; */
 }
 .main-body {
     padding-top: 0;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
 }
+
 .item-holder {
     padding: 0;
     color: white;
@@ -139,6 +133,7 @@ main {
 #add-player-form {
     display: block;
     width: 300px;
+    margin: 0 auto;
     margin-top: 50px;
     padding: 15px;
     background-color: whitesmoke;
@@ -167,30 +162,19 @@ main {
     transition: 0.3s;
 }
 
-/* .schedule-holder {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-height: 150px;
-    max-width: 900px;
-    background-color: whitesmoke;
-    box-shadow: 0 10px 15px #6d7c6e;
-    margin: 30px auto;
-    position: relative;
-} */
-
-.schedule-holder {
+#schedule-holder {
     padding: 0;
+    margin: 0;
+    backdrop-filter: blur(6px);
     color: white;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     /* border-radius: 10px; */
-    /* min-height: 300px; */
-    /* width: 220px; */
+    height: 200px;
+    width: 200px;
     /* box-shadow: 0 10px 15px darkgray; */
-    margin: 30px auto;
     position: relative;
 }
 
