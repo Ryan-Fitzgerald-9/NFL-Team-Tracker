@@ -113,13 +113,12 @@ const scheduleBtnClick = async () => {
       if (scheduleData.length > 0) {
         scheduleData.forEach((games) => {
           const scheduleText = `<div class="schedule-holder">
-            <h5 class="week">${games.week}</h5>
+            <h4 class="week">Wk: ${games.week}</h4>
             <p class="date">${games.date}</p>
             <p class="opponent">${games.opponent}</p>
             <p class="location">${games.location}</p>
             <p class="result">${games.result}</p>
             <p class="score">${games.score}</p>
-            <button class="update-button">Update</button>
             </div>`
   
           mainBody.innerHTML += scheduleText
@@ -144,7 +143,7 @@ const searchBtnClick = async () => {
                     <h3 class="player-name">${player.name}</h3>
                     <p class="position">${player.position} #${player.number}</p>
                     <p class="college">College: ${player.college}</p>
-                    <button class="remove-button">Remove</button>`
+                    </div>`
 
                 mainBody.innerHTML += playerText
             if(!mainBody.innerText) {

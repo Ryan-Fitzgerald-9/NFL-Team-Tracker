@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
+    font-family: 'Racing Sans One', sans-serif;
 }
 
 /* HEADER STYLES */
@@ -29,9 +30,15 @@ a:hover {
     text-transform: uppercase;
     color: #ffffed;
 }
+
 .nav-title .first {
     font-size: 2rem;
 }
+
+.nav-items {
+    font-size: 1.5rem;
+}
+
 .nav-bar {
     z-index: 99;
     position: fixed;
@@ -88,7 +95,7 @@ main {
     background-attachment: fixed;
     min-height: 100vh;
     width: 100%;
-    background-position: 0 60%;
+    background-position: center;
     overflow: hidden;
     padding: 70px;
     /* background-color: #ffffed;
@@ -104,9 +111,8 @@ main {
     justify-content: space-around;
 }
 .item-holder {
-    border: 1px solid red;
     padding: 0;
-    overflow-y: scroll;
+    color: white;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -114,10 +120,20 @@ main {
     border-radius: 10px;
     min-height: 300px;
     width: 220px;
-    background-color: whitesmoke;
-    box-shadow: 0 10px 15px #6d7c6e;
+    background-image: url('https://res.cloudinary.com/nflclubs/image/upload/patriots/afryaqzffycthxy7odhj.jpg');
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 10px 15px darkgray;
     margin: 30px auto;
     position: relative;
+}
+
+.item-holder button {
+    background-color: darkred;
+    color: white;
+    width: 70px;
+    height: 30px;
+    font-size: 16px;
 }
 
 #add-player-form {
@@ -164,21 +180,22 @@ main {
 } */
 
 .schedule-holder {
+    padding: 0;
+    color: white;
     display: flex;
     flex-direction: column;
-    align-items: flex-start; /* Align items to the left */
-    max-width: 900px;
-    background-color: whitesmoke;
-    box-shadow: 0 10px 15px #6d7c6e;
+    justify-content: space-around;
+    align-items: center;
+    /* border-radius: 10px; */
+    /* min-height: 300px; */
+    /* width: 220px; */
+    /* box-shadow: 0 10px 15px darkgray; */
     margin: 30px auto;
     position: relative;
 }
-
-
 
 .player-pic {
     padding: 0;
     max-height: 250px;
     max-width: 200px;
-    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbcwB-XUtygzzEDOnlNlFOv-XsxtQMRszBQA&usqp=CAU');
 }
