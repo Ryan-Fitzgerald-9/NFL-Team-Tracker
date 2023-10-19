@@ -19,4 +19,4 @@ With the idea of an NFL tracker, the initial data relationships can be observed 
 4. At least 1 additional Create, Update, or Delete functionality on models across Front and Back End
 
 ## Languages & Database
-![Javascript](https://raw.githubusercontent.com/yurijserrano/Github-Profile-Readme-Logos/042e36c55d4d757621dedc4f03108213fbb57ec4/programming%20languages/javascript.svg)
+![Javascript](https://raw.githubusercontent.com/yurijserrano/Github-Profile-Readme-Logos/042e36c55d4d757621dedc4f03108213fbb57ec4/programming%20languages/javascript.svg | 50x50)
