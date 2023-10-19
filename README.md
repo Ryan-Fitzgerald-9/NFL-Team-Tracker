@@ -13,10 +13,10 @@ With the idea of an NFL tracker, the initial data relationships can be observed 
 ![Database Structure of NFL Team Tracker](assets/ERD.png)
 
 ## Project Highlights
-1. The app has 3 related data entities
-2. Consistent and polished user interface
-3. Full CRUD on all models across the Back End
-4. Create/Delete functionality on Front End (player model)
+- [x] The app has 3 related data entities
+- [x] Consistent and polished user interface
+- [x] Full CRUD on all models across the Back End
+- [x] Create/Delete functionality on Front End (player model)
 
 ## Languages & Database
 
@@ -24,9 +24,9 @@ HTML, CSS, Javascript, MongoDB
 
 ## Resources
 
-W3Schools
-MDN Web Docs
-Stack Overflow
-Prior GA labs for MongoDB/Axios
-ESPN and Patriots.com for images
-Kevin Powell Youtube channel for CSS ![Kevin Powell Youtube](https://www.youtube.com/@KevinPowell)
+- W3Schools
+- MDN Web Docs
+- Stack Overflow
+- Prior GA labs for MongoDB/Axios
+- ESPN and Patriots.com for images
+- [Kevin Powell Youtube channel for CSS](https://www.youtube.com/@KevinPowell)
