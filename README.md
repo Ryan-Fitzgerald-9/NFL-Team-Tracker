@@ -4,7 +4,7 @@ NFL Team Tracker is a mock app where you can keep updates on your favorite team,
 
 ![Screenshot of the Roster page](assets/tracker-page.png)
 
-The user can use the navigation menu to update their team's current roster, depth chart, players' stats, and team schedule (wins/losses). The user will be able to change these items through interactive player cards and various update forms, depending on the item.
+The user can navigate the menu to update the roster by creating or removing players. The user will be able to change these items through interactive player cards and Add Player form. There is full CRUD on the back-end (MongoDB) with create/delete options on the front-end.
 
 ## Initial Process
 
@@ -12,11 +12,21 @@ With the idea of an NFL tracker, the initial data relationships can be observed 
 
 ![Database Structure of NFL Team Tracker](assets/ERD.png)
 
-## Project Requirements
-1. The app must have 3 related data entities
+## Project Highlights
+1. The app has 3 related data entities
 2. Consistent and polished user interface
 3. Full CRUD on all models across the Back End
-4. At least 1 additional Create, Update, or Delete functionality on models across Front and Back End
+4. Create/Delete functionality on Front End (player model)
 
 ## Languages & Database
-![Javascript](https://raw.githubusercontent.com/yurijserrano/Github-Profile-Readme-Logos/042e36c55d4d757621dedc4f03108213fbb57ec4/programming%20languages/javascript.svg | 50x50)
+
+HTML, CSS, Javascript, MongoDB
+
+## Resources
+
+W3Schools
+MDN Web Docs
+Stack Overflow
+Prior GA labs for MongoDB/Axios
+ESPN and Patriots.com for images
+Kevin Powell Youtube channel for CSS ![Kevin Powell Youtube](https://www.youtube.com/@KevinPowell)
