@@ -118,7 +118,7 @@ main {
     background-image: url('https://res.cloudinary.com/nflclubs/image/upload/patriots/afryaqzffycthxy7odhj.jpg');
     background-size: cover;
     background-position: center;
-    box-shadow: 0 10px 15px darkgray;
+    box-shadow: 0 10px 15px rgb(37, 36, 36);
     margin: 30px auto;
     position: relative;
 }
@@ -176,6 +176,7 @@ main {
     height: 200px;
     width: 200px;
     position: relative;
+    text-shadow: 0 0.25em 0 #0D254C;
 }
 
 .player-pic {
