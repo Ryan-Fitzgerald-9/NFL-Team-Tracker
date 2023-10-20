@@ -1,6 +1,6 @@
 # NFL-Team-Tracker
 
-NFL Team Tracker is a mock app where you can keep updates on your favorite team, for this demo I created a page for the New England Ptriots (25 players from the offense).
+NFL Team Tracker is a mock app where you can keep updates on your favorite team, for this demo I created a page for the New England Patriots (25 players from the offense).
 
 ![Screenshot of the Roster page](assets/tracker-page.png)
 

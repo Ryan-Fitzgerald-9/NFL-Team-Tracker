@@ -46,7 +46,7 @@ const rosterBtnClick = async () => {
             mainBody.innerHTML += playerText
 
         })
-
+        // Remove button - Delete
         mainBody.addEventListener('click', async (event) => {
             if (event.target && event.target.classList && event.target.classList.contains('remove-button')) {
                 const playerElement = event.target.closest('.item-holder')
@@ -67,7 +67,7 @@ const rosterBtnClick = async () => {
         console.error(error)
     }
 }
-
+// Add new player - Post
 const addPlayerBtnClick = async (e) => {
     e.preventDefault()
     infoBtns.replaceChildren()
